@@ -1,0 +1,15 @@
+.home .banner {
+    background-image: url("../../assets/banner.jpeg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section {
+    padding: 20px;
+    text-align: center;
+  }
+  
