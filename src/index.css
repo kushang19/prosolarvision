@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 body { margin: 0; padding: 0; font-family: "Open Sans", Arial, sans-serif; }
-.container{max-width: 1280px; margin: 0 auto; padding: 30px 80px;}
-.page-header{text-align: center; font-size: 50px;}
+.container-main{max-width: 1280px; margin: 30px auto; padding: 0 50px;}
+.page-header{text-align: center; font-size: 50px; margin: 0 0 30px;}
 
   

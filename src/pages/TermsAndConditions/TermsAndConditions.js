@@ -3,7 +3,7 @@ import "./TermsAndConditions.css";
 
 const TermsAndConditions = () => {
   return (
-    <div className="container">
+    <div className="container-main">
       <div className="wrapper">
         <div className="inner-wrapper">
           <h1 className="page-header">Terms & Conditions</h1>

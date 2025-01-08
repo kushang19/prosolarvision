@@ -1,0 +1,22 @@
+.image-inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add spacing between images */
+    padding: 0;
+    list-style: none; /* Remove default list styles */
+  }
+  
+  .image-inner-wrapper li {
+    flex: 1 1 calc(50% - 20px); /* Make each image take half the width (50%) minus the gap */
+    display: flex;
+    justify-content: center; /* Center images inside the list item */
+  }
+  
+  .image-inner-wrapper img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+  }
+  
