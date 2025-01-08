@@ -5,6 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="footer-innerwrap">
       <div className="footer-left">
         <h2>ProSolar Vision</h2>
       </div>
@@ -22,6 +23,7 @@ const Footer = () => {
           <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
           <li><a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a></li>
         </ul>
+      </div>
       </div>
     </footer>
   );

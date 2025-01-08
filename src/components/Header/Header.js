@@ -1,19 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="header">
-      <div className="logo">ProSolarVision</div>
-      <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/solar-products">Solar Products</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/about-us">About Us</Link>
-        <Link to="/contact-us">Contact Us</Link>
-      </nav>
+      <div className="header-innerwrap">
+        <div className="logo">ProSolarVision</div>
+
+        {/* Hamburger and Navbar */}
+        <div
+          className={`hamburger-overlay ${isMenuOpen ? "active" : ""}`}
+          onClick={closeMenu}
+        ></div>
+        <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
+          <button className="hamburger-btn" onClick={toggleMenu}>
+            <span className={`line ${isMenuOpen ? "open" : ""}`}></span>
+            <span className={`line ${isMenuOpen ? "open" : ""}`}></span>
+            <span className={`line ${isMenuOpen ? "open" : ""}`}></span>
+          </button>
+
+          <ul className={`nav-links ${isMenuOpen ? "show" : ""}`}>
+            <li onClick={closeMenu}>
+              <Link to="/">Home</Link>
+            </li>
+            <li onClick={closeMenu}>
+              <Link to="/solar-products">Solar Products</Link>
+            </li>
+            <li onClick={closeMenu}>
+              <Link to="/services">Services</Link>
+            </li>
+            <li onClick={closeMenu}>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li onClick={closeMenu}>
+              <Link to="/about-us">About Us</Link>
+            </li>
+            <li onClick={closeMenu}>
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

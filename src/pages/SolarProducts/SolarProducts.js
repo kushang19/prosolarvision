@@ -2,9 +2,14 @@ import React from 'react'
 
 const SolarProducts = () => {
   return (
-    <div>
-      SolarProducts
+    <div className="container">
+    <div className="wrapper">
+      <div className="inner-wrapper">
+        <h1 className="page-header">Solar Products</h1>
+        <div className="content"></div>
+      </div>
     </div>
+  </div>
   )
 }
 

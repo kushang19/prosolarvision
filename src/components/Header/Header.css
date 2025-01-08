@@ -1,21 +1,130 @@
+/* General Styling */
 .header {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+  
+  .header-innerwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #fff;
   }
-  .navbar a {
-    margin: 0 10px;
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
   }
-  .navbar a:hover {
-    text-decoration: underline;
+  
+  .nav-links li a:hover {
+    color: #f0a500;
+  }
+  
+  /* Hamburger Button */
+  .hamburger-btn {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 11;
+  }
+  
+  .hamburger-btn .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger-btn .line.open:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  
+  .hamburger-btn .line.open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-btn .line.open:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger-btn {
+      display: flex;
+    }
+  
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 70%;
+      background-color: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 10;
+    }
+  
+    .nav-links.show {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Overlay */
+  .hamburger-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .hamburger-overlay.active {
+    opacity: 1;
+    visibility: visible;
   }
   
