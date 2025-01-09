@@ -1,0 +1,101 @@
+/* General Wrapper */
+.services .image-wrapper {
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .services .image-inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  /* Individual Cards */
+ .services .image-inner-wrapper li {
+    flex: 1 1 calc(50% - 20px); /* 2 Columns */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+ /* .services .image-inner-wrapper li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  } */
+  
+  /* Image Styling */
+ .services .image-inner-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+ .services .image-inner-wrapper li:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Headings */
+ .services .image-inner-wrapper h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+.services  .image-inner-wrapper li:hover h3 {
+    text-decoration: underline;
+  }
+  
+  /* Paragraphs */
+ .services .image-inner-wrapper p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Call to Action */
+ .services .cta-wrap {
+    text-align: center;
+  }
+  
+ .services .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+ .services .cta:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+  .services  .image-inner-wrapper li {
+      flex: 1 1 100%; /* 1 Column */
+    }
+  }
+  
