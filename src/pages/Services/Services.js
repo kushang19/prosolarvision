@@ -13,6 +13,7 @@ const Services = () => {
         <div className='inner-wrapper'>
           <h1 className='page-header'>Services</h1>
           <div className='content'>
+          <h2>Services</h2>
           <p>We offer professional solar panel installation services for residential, commercial, and industrial properties. Our team of certified technicians ensures a seamless installation process from start to finish, optimizing the system for maximum efficiency and energy savings.</p>
           <div className="image-wrapper">
               <ul className="image-inner-wrapper">
