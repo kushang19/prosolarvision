@@ -54,6 +54,34 @@
   line-height: 1.5;
 }
 
+.solar-products .installation-steps{
+  margin: 30px 0;
+}
+
+.solar-products .order-list li{margin-bottom: 10px;}
+
+  /* Call to Action */
+  .solar-products .cta-wrap {
+    text-align: left;
+  }
+  
+ .solar-products .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+ .solar-products .cta:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .solar-products .card {
