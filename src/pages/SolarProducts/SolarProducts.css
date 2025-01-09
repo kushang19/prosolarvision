@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 599px) {
   .solar-products .card {
     flex: 1 1 100%; /* 1 Column for mobile */
     max-width: 100%;
