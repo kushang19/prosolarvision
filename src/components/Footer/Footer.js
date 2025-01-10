@@ -7,7 +7,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-innerwrap">
         <div className="footer-left">
+          <Link to="/" style={{textDecoration:"none", color:"#ffffff"}}>
           <h2>ProSolar Vision</h2>
+          </Link>
         </div>
         <div className="footer-right">
           <ul className="footer-links">

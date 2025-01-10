@@ -16,7 +16,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-innerwrap">
+        <Link to="/" style={{textDecoration:"none"}}>
         <div className="logo">ProSolarVision</div>
+        </Link>
 
         {/* Hamburger and Navbar */}
         <div

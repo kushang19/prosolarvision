@@ -1,74 +1,127 @@
 .contact-us .contact-us-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-us .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-us .content .left-content,
+.contact-us .content .right-content {
+  width: 45%;
+}
+
+.contact-us h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact-us .contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-us .contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-us .contact-form input,
+.contact-us .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us .contact-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us .contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-us .error {
+  color: red;
+  font-size: 14px;
+}
+
+.contact-us .thank-you-message {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-us .thank-you-message h2 {
+  margin-bottom: 20px;
+}
+
+.contact-us .thank-you-message button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us .thank-you-message button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .contact-us .content {
+    flex-direction: column;
+    gap: 10px;
   }
-  
+
+  .contact-us .content .left-content,
+  .contact-us .content .right-content {
+    width: 100%;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .contact-us-container {
+    padding: 15px;
+  }
+
   .contact-us h2 {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 18px;
   }
-  
-  .contact-us .contact-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .contact-us .contact-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
+
   .contact-us .contact-form input,
   .contact-us .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact-us .contact-form button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contact-us .contact-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .contact-us .error {
-    color: red;
     font-size: 14px;
+    padding: 8px;
   }
-  
-  .contact-us .thank-you-message {
-    text-align: center;
-    font-family: Arial, sans-serif;
+
+  .contact-us .contact-form button {
+    font-size: 14px;
+    padding: 8px;
   }
-  
-  .contact-us .thank-you-message h2 {
-    margin-bottom: 20px;
-  }
-  
+
   .contact-us .thank-you-message button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 15px;
   }
-  
-  .contact-us .thank-you-message button:hover {
-    background-color: #0056b3;
-  }
-  
+}
