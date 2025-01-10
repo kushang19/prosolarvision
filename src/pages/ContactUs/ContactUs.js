@@ -14,8 +14,8 @@ const ContactUs = () => {
     // Send email using EmailJS
     emailjs
       .send(
-        "your_service_id", // Replace with your EmailJS service ID
-        "your_template_id", // Replace with your EmailJS template ID
+        "service_85hb6ac", // Replace with your EmailJS service ID
+        "template_msoe6ot", // Replace with your EmailJS template ID
         {
           firstName: data.firstName,
           lastName: data.lastName,
@@ -23,7 +23,7 @@ const ContactUs = () => {
           mobileNumber: data.mobileNumber,
           message: data.message,
         },
-        "your_user_id" // Replace with your EmailJS user ID
+        "dC0PNobtb4j-Xc9io" // Replace with your EmailJS user ID
       )
       .then(
         () => {
@@ -51,7 +51,7 @@ const ContactUs = () => {
   }
 
   return (
-    <div className="contact-us-container container-main">
+    <div className="contact-us-container container-main contact-us">
       <div className="wrapper">
       <div className="inner-wrapper">
       <h1 className="page-header">Contact Us</h1>
