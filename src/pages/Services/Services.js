@@ -1,8 +1,8 @@
 import React from 'react'
-import ServicesImage1 from "../../assets/ServicesImage1.png";
-import ServicesImage2 from "../../assets/ServicesImage2.png";
-import ServicesImage3 from "../../assets/ServicesImage3.png";
-import ServicesImage4 from "../../assets/ServicesImage4.png";
+import ServicesImage1 from "../../assets/images/ServicesImage1.png";
+import ServicesImage2 from "../../assets/images/ServicesImage2.png";
+import ServicesImage3 from "../../assets/images/ServicesImage3.png";
+import ServicesImage4 from "../../assets/images/ServicesImage4.png";
 import { Link } from 'react-router-dom';
 import "./Services.css";
 
