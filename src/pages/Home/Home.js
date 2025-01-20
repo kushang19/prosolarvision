@@ -3,6 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import SolarHomeSection1 from "./Sections/SolarHomeSection1";
 import SolarHomeSection2 from "./Sections/SolarHomeSection2";
+import SolarHomeSection3 from "./Sections/SolarHomeSection3";
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
       </div>
       <SolarHomeSection1 />
       <SolarHomeSection2 />
-      <section className="section">Section 3 Content</section>
+      <SolarHomeSection3 />
     </div>
   );
 };
