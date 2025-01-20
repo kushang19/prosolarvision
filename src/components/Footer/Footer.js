@@ -9,6 +9,7 @@ const Footer = () => {
         <div className="footer-left">
           <Link to="/" style={{textDecoration:"none", color:"#ffffff"}}>
           <h2>ProSolar Vision</h2>
+          <p className="slogan">Rakhe Bijlee Bill se Durr</p>
           </Link>
         </div>
         <div className="footer-right">
@@ -21,6 +22,9 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/terms-and-conditions">Terms and Conditions</Link>
+            </li>
+            <li>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>
               <Link to="/contact-us">Contact Us</Link>

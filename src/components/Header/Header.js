@@ -18,6 +18,7 @@ const Header = () => {
       <div className="header-innerwrap">
         <Link to="/" style={{textDecoration:"none"}}>
         <div className="logo">ProSolarVision</div>
+        <p className="slogan">Rakhe Bijlee Bill se Durr</p>
         </Link>
 
         {/* Hamburger and Navbar */}
@@ -37,6 +38,9 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li onClick={closeMenu}>
+              <Link to="/estimator">Estimator</Link>
+            </li>
+            <li onClick={closeMenu}>
               <Link to="/solar-products">Solar Products</Link>
             </li>
             <li onClick={closeMenu}>
@@ -45,9 +49,9 @@ const Header = () => {
             <li onClick={closeMenu}>
               <Link to="/projects">Projects</Link>
             </li>
-            <li onClick={closeMenu}>
+            {/* <li onClick={closeMenu}>
               <Link to="/about-us">About Us</Link>
-            </li>
+            </li> */}
             <li onClick={closeMenu}>
               <Link to="/contact-us">Contact Us</Link>
             </li>

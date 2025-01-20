@@ -13,6 +13,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import ScrollToTop from "./components/shared/ScrollToTop";
+import Estimator from "./pages/Estimator/Estimator";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/estimator" element={<Estimator />} />
       </Routes>
       <Footer />
     </Router>
