@@ -40,7 +40,7 @@ const SolarHomeSection2 = () => {
       <div className="star-decoration"></div>
       
       <div className="process-header animate-on-scroll">
-        <h1>An array of Process</h1>
+        <h1>An Array of Process</h1>
         <p>
           Our comprehensive suite of professional services caters to a diverse clientele,
           ranging from homeowners to commercial developers.

@@ -78,7 +78,7 @@
     padding: 10px;
     font-size: 1rem;
     color: #fff;
-    background: #ff7f00;
+    background: #0aa40a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -86,7 +86,7 @@
   }
   
   .submit-btn:hover {
-    background: #e76e00;
+    background: #067806;
   }
   
   /* Sticky CTA Button */
@@ -94,7 +94,7 @@
     position: fixed;
     /* bottom: 20px; */
     right: 20px;
-    background: #ff7f00;
+    background: #0aa40a;
     color: #fff;
     padding: 15px 20px;
     border: none;
@@ -120,7 +120,7 @@
   }
   
   .cta-btn:hover {
-    background: #e76e00;
+    background: #067806;
   }
 
   /* Additional code for barnner form */

@@ -17,7 +17,7 @@ const Header = () => {
     <header className="header">
       <div className="header-innerwrap">
         <Link to="/" style={{textDecoration:"none"}}>
-        <div className="logo">ProSolarVision</div>
+        <div className="logo"><span>Pro</span>SolarVision</div>
         <p className="slogan">Rakhe Bijlee Bill se Durr</p>
         </Link>
 
