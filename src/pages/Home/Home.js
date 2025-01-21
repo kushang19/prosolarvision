@@ -5,18 +5,20 @@ import SolarHomeSection1 from "./Sections/SolarHomeSection1";
 import SolarHomeSection2 from "./Sections/SolarHomeSection2";
 import SolarHomeSection3 from "./Sections/SolarHomeSection3";
 import Popup from "../../shared/Popup/Popup";
+import Banner from "./Sections/Banner";
 
 const Home = () => {
   return (
     <div className="home">
-      <div id="banner" className="banner" style={{ height: "100vh"}}>
+      {/* <div id="banner" className="banner" style={{ height: "100vh"}}>
         <h1>A Commitment To Innovation & Sustainability</h1>
         <p className="">
           “Powering Tomorrow, Today: Illuminating Your Path with Solar Energy”
           <br />
           <strong>Join the Solar Revolution with Solar Solutions!</strong>
         </p>
-      </div>
+      </div> */}
+      <Banner/>
       <Popup />
       <SolarHomeSection1 />
       <SolarHomeSection2 />

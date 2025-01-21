@@ -1,0 +1,16 @@
+.banner form{display: flex ; flex-wrap: wrap; width: 100%; justify-content: space-between;}
+.banner form .form-group{width: 49%;}
+.banner-form.form-container{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .banner-form.form-container .close-btn{top: 2px; right:15px;}
+
+  .banner .cta-btn{
+    position: relative;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }

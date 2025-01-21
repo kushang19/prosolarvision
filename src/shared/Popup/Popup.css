@@ -122,4 +122,30 @@
   .cta-btn:hover {
     background: #e76e00;
   }
+
+  /* Additional code for barnner form */
+
+  .banner {
+    position: relative;
+    text-align: center;
+    background: #f3f3f3;
+    padding: 20px;
+  }
+  
+  .form-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+    .error {
+    color: red;
+    font-size: 12px;
+  }
+  
   
