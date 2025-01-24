@@ -6,9 +6,11 @@ import "./Popup.css";
 const Popup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isBannerVisible, setIsBannerVisible] = useState(true);
+
   const { register, handleSubmit, formState: { errors }, setValue, reset } = useForm({
     mode: "onChange", // Enables real-time validation
   });
+
   const navigate = useNavigate();
 
   // Disable background scroll when the popup is open
@@ -49,9 +51,30 @@ const Popup = () => {
 
   const onSubmit = (data) => {
     console.log("Form Data:", data);
-    alert("Form submitted successfully!");
-    // Store form data in sessionStorage
-    sessionStorage.setItem("designSystemFormData", JSON.stringify(data));
+
+    const costPerUnit = 10; // Default cost per unit
+    const monthlyConsumption = parseFloat(data.monthlyBill) / costPerUnit;
+    const yearlyConsumption = monthlyConsumption * 12;
+    const dailyConsumption = yearlyConsumption / 365;
+    const systemKW = dailyConsumption / 4;
+    const areaRequired = systemKW * 100;
+
+    // Add calculations to form data
+    const updatedData = {
+      ...data,
+      monthlyConsumption: monthlyConsumption.toFixed(2),
+      yearlyConsumption: yearlyConsumption.toFixed(2),
+      unitPerDay: dailyConsumption.toFixed(2),
+      systemInKW: systemKW.toFixed(2),
+      areaRequired: areaRequired.toFixed(2),
+      costPerUnit: 10,
+      electricityProvider: "",
+    };
+
+    // Store form data with calculations in sessionStorage
+    sessionStorage.setItem("designSystemFormData", JSON.stringify(updatedData));
+
+    // alert("Form submitted successfully!");
     setIsOpen(false); // Close the popup after submission
     navigate("/estimator"); // Navigate to the "/estimator" page
   };
