@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import roof from "../../assets/images/roof.png";
+import solorEnergy from "../../assets/images/solar-energy.png";
 import "./Estimator.css";
 
 const Estimator = () => {
@@ -97,6 +99,7 @@ const Estimator = () => {
           district: locationDetails.District,
           state: locationDetails.State,
           country: "India",
+          area: locationDetails.Name,
         });
         setPincodeError(""); // Clear error if valid
       } else {
@@ -135,6 +138,7 @@ const Estimator = () => {
 
   return (
     <div className="estimator-container">
+      <div className="estimator-top">
       <h2>Let's design your system</h2>
       <form className="estimator-form" onSubmit={handleSubmit}>
         <div className="form-row">
@@ -205,21 +209,28 @@ const Estimator = () => {
           DESIGN AND PRICE
         </button>
       </form>
-
-      {calculatedData && (
+      </div>
+      <div className="estimator-bottom">
+      {(calculatedData && locationInfo) ?  (
         <div className="result-container">
           <h3>{calculatedData.systemInKW.toFixed(1)} kilowatt (kW)</h3>
-          <p><span>{locationInfo?.state}</span>, <span>{locationInfo?.district}</span></p>
+          <p><strong>Location: </strong><span>{locationInfo?.state}</span>, <span>{locationInfo?.district}</span>, <span>{locationInfo?.area}</span></p>
           <div className="result-grid">
             {/* <div className="result-item">
               <span>₹{calculatedData.monthlySavings}</span>
               <p>Monthly Savings</p>
             </div> */}
             <div className="result-item">
+              <div className="image-wrap-icon">
+              <img src={roof} width={40} height={40}/>
+              </div>
               <span>{calculatedData.areaRequired.toFixed(0)} sqft</span>
               <p>Roof area required</p>
             </div>
             <div className="result-item">
+            <div className="image-wrap-icon">
+              <img src={solorEnergy} width={40} height={40}/>
+              </div>
               <span>{calculatedData.solarUnits.toFixed(0)} kWh</span>
               <p>Solar units per month</p>
             </div>
@@ -230,7 +241,8 @@ const Estimator = () => {
             offset your electricity consumption.
           </p>
         </div>
-      )}
+      ) : <p>loading...</p>}
+      </div>
     </div>
   );
 };

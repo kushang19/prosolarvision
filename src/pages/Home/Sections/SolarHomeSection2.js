@@ -1,6 +1,7 @@
 // SolarHomeSection2.jsx
 import React, { useEffect } from 'react';
 import './SolarHomeSection2.css';
+import solarInstallation from "../../../assets/images/solar-installation.webp"
 
 const SolarHomeSection2 = () => {
   useEffect(() => {
@@ -67,7 +68,8 @@ const SolarHomeSection2 = () => {
 
         <div className="image-container animate-on-scroll">
           <img 
-            src="https://prosolarvision.wordpress.com/wp-content/uploads/2024/04/residential-solar-panel-installation-service-500x500-1.webp" 
+            // src="https://prosolarvision.wordpress.com/wp-content/uploads/2024/04/residential-solar-panel-installation-service-500x500-1.webp" 
+            src={solarInstallation}
             alt="Solar panel installation" 
             className="process-image"
           />

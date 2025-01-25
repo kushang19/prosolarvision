@@ -1,8 +1,9 @@
 .home-section-3 {
-  background: #000000;
+  /* background: cadetblue; */
+  background: chocolate;
   color: #fff;
   text-align: center;
   padding: 80px 250px;
 }
-.home-section-3 .hs-3-p1{font-size: 30px; margin-bottom: 50px;}
+.home-section-3 .hs-3-p1{font-size: 30px; margin-bottom: 30px;}
 .home-section-3 .hs-3-p2 {font-size: 20px;}

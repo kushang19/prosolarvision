@@ -13,6 +13,26 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-right">
+        <ul className="footer-links">
+            <li>
+              <strong>Company</strong>
+            </li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/estimator">Estimator</Link>
+            </li>
+            <li>
+               <Link to="/solar-products">Solar Products</Link>
+            </li>
+            <li>
+             <Link to="/services">Services</Link>
+            </li>
+            <li>
+               <Link to="/projects">Projects</Link>
+            </li>
+          </ul>
           <ul className="footer-links">
             <li>
               <strong>Privacy</strong>
