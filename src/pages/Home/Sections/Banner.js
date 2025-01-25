@@ -143,7 +143,8 @@ const Banner = () => {
       )}
 
       {!isBannerVisible && (
-        <div className="sticky-wrapper">
+        <div className="sticky-wrapper d-flex">
+          <span style={{paddingLeft: "150px"}}>Go Green with Prosolar Vision</span>
           <button className="cta-btn" onClick={() => setIsFormVisible(true)}>Design Your System</button>
         </div>
       )}
