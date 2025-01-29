@@ -153,7 +153,7 @@ const Popup = () => {
       {/* Sticky Button */}
       {!isBannerVisible && (
         <div className="sticky-wrapper d-flex">
-          <span style={{paddingLeft: "150px", fontSize: "25px", color:"#0aa40a"}}>Go Green with Prosolar Vision</span>
+          <span className="go-green">Go Green with Prosolar Vision</span>
           <button className="cta-btn" onClick={handleOpenPopup}>Design Your System</button>
         </div>
       )}
