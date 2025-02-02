@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/prosolarvision/static/css/main.bb260c99.css",
+    "main.js": "/prosolarvision/static/js/main.0a82336f.js",
+    "static/media/wiring-connector.png": "/prosolarvision/static/media/wiring-connector.fd7be5e776d5cd04814d.png",
+    "static/media/solar-panal.png": "/prosolarvision/static/media/solar-panal.562d36208997cfd6fd0d.png",
+    "static/media/banner.jpeg": "/prosolarvision/static/media/banner.f54a884d2290d8ddf89b.jpeg",
+    "static/media/ProjetImage1.png": "/prosolarvision/static/media/ProjetImage1.e232477d52582def8192.png",
+    "static/media/ServicesImage2.png": "/prosolarvision/static/media/ServicesImage2.e84267abd6e438c64bdd.png",
+    "static/media/ServicesImage4.png": "/prosolarvision/static/media/ServicesImage4.3ab34f6b25fc66dbf836.png",
+    "static/media/ServicesImage3.png": "/prosolarvision/static/media/ServicesImage3.6df673e5fde4067e7865.png",
+    "static/media/mounting-hardware.png": "/prosolarvision/static/media/mounting-hardware.296b982f1cbb19fa14bc.png",
+    "static/media/ProjetImage2.png": "/prosolarvision/static/media/ProjetImage2.83a5e25ad8c154f1433e.png",
+    "static/media/solar-batteries.png": "/prosolarvision/static/media/solar-batteries.fe5876cfb3f34b7c8f8b.png",
+    "static/media/solar-installation.webp": "/prosolarvision/static/media/solar-installation.51b83dbcc926b8231af9.webp",
+    "static/media/racking-mounting.png": "/prosolarvision/static/media/racking-mounting.ca9496d1b1333842fdfc.png",
+    "static/media/charger-controller.png": "/prosolarvision/static/media/charger-controller.cff148a918f7fe59ed29.png",
+    "static/media/inverter.png": "/prosolarvision/static/media/inverter.b55de421b094522d70d9.png",
+    "static/media/ServicesImage1.png": "/prosolarvision/static/media/ServicesImage1.56069c05b856164e6040.png",
+    "static/media/ProjetImage3.png": "/prosolarvision/static/media/ProjetImage3.32cd19b7f78b0636ea64.png",
+    "static/media/ProjetImage4.png": "/prosolarvision/static/media/ProjetImage4.c89dfeaf827ae5358ca1.png",
+    "index.html": "/prosolarvision/index.html",
+    "main.bb260c99.css.map": "/prosolarvision/static/css/main.bb260c99.css.map",
+    "main.0a82336f.js.map": "/prosolarvision/static/js/main.0a82336f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb260c99.css",
+    "static/js/main.0a82336f.js"
+  ]
+}
