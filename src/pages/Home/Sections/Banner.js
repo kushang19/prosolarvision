@@ -71,7 +71,7 @@ const Banner = () => {
   };
 
   return (
-    <div id="banner" className="banner" style={{ height: "100vh" }}>
+    <div id="banner" className="banner">
       <h1>A Commitment To Innovation & Sustainability</h1>
       <p>
         “Powering Tomorrow, Today: Illuminating Your Path with Solar Energy” <br />

@@ -1,6 +1,6 @@
 .home .banner {
     background-image: url("../../assets/images/banner.jpeg");
-    height: 400px;
+    height: calc(100vh - 71px);
     background-size: cover;
     background-position: center;
     color: #000000;
