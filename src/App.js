@@ -16,8 +16,11 @@ import ScrollToTop from "./components/shared/ScrollToTop";
 import Estimator from "./pages/Estimator/Estimator";
 
 function App() {
+  // Setting basename for GitHub Pages
+  const basename = process.env.PUBLIC_URL || '/';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <ScrollToTop />
       <Header />
       <Routes>

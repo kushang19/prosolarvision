@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <script>
+      const pathSegments = window.location.pathname.split('/').filter(Boolean);
+      const repoName = 'your-repo-name';
+      if (pathSegments[0] === repoName) {
+        const newPath = '/' + repoName + '/' + pathSegments.slice(1).join('/');
+        window.location.replace(newPath);
+      } else {
+        window.location.replace('/' + repoName + '/');
+      }
+    </script>
+  </body>
+</html>

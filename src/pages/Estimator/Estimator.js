@@ -241,7 +241,7 @@ const Estimator = () => {
             offset your electricity consumption.
           </p>
         </div>
-      ) : <p>loading...</p>}
+      ) : <p>Go Green with Prosolar Vision...</p>}
       </div>
     </div>
   );
